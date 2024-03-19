@@ -35,8 +35,8 @@ async function sendEmail(email: ParsedMail) {
   });
 
   transporter.sendMail({
-    from: String(email.from),
-    to: String(email.to),
+    from: process.env.FROM,
+    to: process.env.TO,
     subject: email.subject,
     text: email.text,
     html: email.textAsHtml,
