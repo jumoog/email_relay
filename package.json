@@ -7,12 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "mailparser": "^3.7.1",
-    "nodemailer": "^6.9.14",
-    "smtp-server": "^3.13.4"
+    "nodemailer": "^6.9.16",
+    "smtp-server": "^3.13.6"
   },
   "devDependencies": {
-    "@types/bun": "^1.1.6",
-    "@types/mailparser": "^3.4.4",
+    "@types/bun": "^1.1.12",
+    "@types/mailparser": "^3.4.5",
     "@types/smtp-server": "^3.5.10"
   }
 }
