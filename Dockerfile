@@ -1,11 +1,12 @@
-FROM oven/bun:1.1.33-alpine
+FROM oven/bun:1.1.34-alpine
 
 WORKDIR /relay
+
+RUN apk update && apk add --no-cache tini
+
 COPY . .
-ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.5/dumb-init_1.2.5_x86_64 /bin/dumb-init
-RUN bun install --production --ignore-scripts &&\
-    chmod +x /bin/dumb-init
-ENTRYPOINT ["dumb-init", "--"]
+RUN bun install --production --ignore-scripts
+ENTRYPOINT ["tini", "--"]
 CMD ["bun", "app.ts"]
 
 EXPOSE 25
