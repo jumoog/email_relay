@@ -1,4 +1,4 @@
-FROM oven/bun:1.2.7-alpine
+FROM oven/bun:1.2.8-alpine
 
 WORKDIR /relay
 
