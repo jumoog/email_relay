@@ -6,7 +6,7 @@
   "author": "jumoog",
   "license": "MIT",
   "dependencies": {
-    "mailparser": "^3.9.7",
+    "mailparser": "^3.9.8",
     "nodemailer": "^8.0.5",
     "smtp-server": "^3.18.4"
   },
