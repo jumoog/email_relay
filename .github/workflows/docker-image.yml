@@ -25,6 +25,6 @@ jobs:
 
           - name: 'Build Inventory Image'
             run: |
-              docker build . --tag ghcr.io/jumoog/email_relay:latest
-              docker push ghcr.io/jumoog/email_relay:latest
+              docker build . --tag ghcr.io/innovis-kg/email_relay:latest
+              docker push ghcr.io/innovis-kg/email_relay:latest
 
